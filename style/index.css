@@ -15,6 +15,30 @@ body {
 .header-nav {
   display: none;
 }
+.header-nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+.header-nav a {
+  text-decoration: none;
+  color: #000;
+}
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: block;
+  }
+}
+.header-left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .header-menu {
+    display: none;
+  }
+}
 
 .hero {
   display: grid;
@@ -66,6 +90,12 @@ body {
   grid-template-rows: repeat(3, auto);
   grid-template-columns: 100%;
   gap: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .featured-list {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .featured-card {
@@ -187,6 +217,13 @@ body {
   margin-block: 0.25rem;
 }
 
+@media screen and (min-width: 768px) {
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -225,9 +262,10 @@ body {
   background-color: #EEE;
   color: #7C838D;
   border: none;
-  padding-inline: 1rem;
-  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  padding-block: 1rem;
   border-radius: 5px;
+  font-size: 1em;
 }
 .contact-form textarea {
   grid-column: span 2;

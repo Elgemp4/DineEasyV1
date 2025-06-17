@@ -1,3 +1,5 @@
+@use 'colors'
+    
 .header
     display: flex
     justify-content: space-between
@@ -9,3 +11,26 @@
 
     &-nav
         display: none
+
+        & ul
+            list-style-type: none
+            display: flex
+            gap: 2rem
+
+        & a
+            text-decoration: none
+            color: colors.$dark
+
+        @media screen and (min-width: 768px) 
+            display: block
+
+    &-left
+        display: flex
+        gap: 1rem
+        align-items: center
+
+    &-menu
+        @media screen and (min-width: 768px) 
+            display: none
+
+    

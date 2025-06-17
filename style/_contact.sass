@@ -1,7 +1,10 @@
 @use 'colors'
     
 .contact
-
+    @media screen and (min-width: 768px) 
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 4rem
 
     &-info
         display: flex
@@ -42,9 +45,10 @@
             background-color: #EEE
             color: colors.$gray
             border: none
-            padding-inline: 1rem
-            padding-block: .5rem
+            padding-inline: 2rem
+            padding-block: 1rem
             border-radius: 5px
+            font-size: 1em
 
         & textarea
             grid-column: span 2

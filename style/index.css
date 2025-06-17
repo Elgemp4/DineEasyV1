@@ -236,6 +236,52 @@ body {
   grid-column: 2;
 }
 
+.about-title {
+  font-size: 4rem;
+  margin: 0;
+  text-align: center;
+}
+.about-desc {
+  color: #7C838D;
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+.about-person {
+  width: 12rem;
+  text-align: center;
+}
+
+.connect {
+  background-color: #7c3aed;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: -2rem;
+  margin-bottom: -2rem;
+}
+.connect-title {
+  font-size: 2rem;
+  text-align: center;
+}
+.connect-desc {
+  font-weight: 400;
+  text-align: center;
+}
+.connect .button {
+  background: white;
+  color: #7c3aed;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -244,6 +290,10 @@ body {
 .main {
   padding: 0;
   margin: 2rem;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 hr {

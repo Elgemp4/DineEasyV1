@@ -1,0 +1,54 @@
+@use 'colors'
+    
+.featured
+    
+    &-title
+        font-size: 3rem
+        text-align: center
+        margin-bottom: .25rem
+    &-desc
+        font-size: 1.5rem
+        font-weight: 300
+        text-align: center
+        margin-top: .25rem
+
+    &-list
+        display: grid
+        grid-template-rows: repeat(3, auto)
+        grid-template-columns: 100%
+        gap: 2.5rem
+
+.featured-card
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+
+    
+    &-image
+        border-radius: 15px
+        width: 100%
+
+    &-see
+        align-self: flex-end
+        text-decoration: none
+        color: colors.$primary
+
+
+    &-title
+        font-size: 2rem
+        font-weight: bold
+        margin: 0
+
+        &-div
+            width: 100%
+            display: flex
+            justify-content: space-between
+
+    &-desc
+        color: colors.$gray
+
+    &-note
+        display: flex
+        justify-content: center
+        align-items: center

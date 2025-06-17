@@ -1,0 +1,36 @@
+.experiences
+    margin-top: 5rem
+
+    &-title
+        font-size: 3rem
+        margin-top: 2rem
+        z-index: 10
+
+        &-img
+            position: absolute
+            top: 0
+
+
+        &-container
+            position: relative
+            padding-top: 1rem
+    &-list
+        display: grid
+        grid-template-rows: repeat(3, auto)
+        grid-auto-columns: 100%
+        gap: 2rem
+
+    &-card
+        position: relative
+        padding-left: 4rem !important
+
+        &-quote
+            position: absolute
+            top: calc(50% - .5rem)
+            left: 1rem
+            width: 1rem
+            aspect-ratio: 1/1
+
+    &-author
+        font-weight: bolder
+        margin-top: 1rem

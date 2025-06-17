@@ -1,0 +1,22 @@
+@use "colors"
+    
+.footer
+    background-color: colors.$dark
+    color: white
+    display: flex
+    justify-content: space-between
+    padding: 2rem
+
+    &-info
+        & a 
+            color: white
+            text-decoration: none
+            &:hover
+                text-decoration: underline
+
+        &-copy
+            font-size: .75rem
+            font-weight: 350
+    &-networks
+        display: flex
+        flex-direction: column
